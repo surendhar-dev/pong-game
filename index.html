@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retro Pong Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <div class="scoreboard">
+            <div class="score-container">
+                <h2>Player</h2>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="vs">VS</div>
+            <div class="score-container">
+                <h2>Computer</h2>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+        <canvas id="pongCanvas" width="800" height="500"></canvas>
+        <div class="controls">
+            <p>↑ UP / ↓ DOWN or Mouse to move paddle</p>
+            <button id="startBtn" class="retro-btn">Start Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
