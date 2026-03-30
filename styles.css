@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#game {
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.score-container {
+    flex: 1;
+}
+
+.score-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score-container p {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 20px #00ff00;
+}
+
+.vs {
+    font-size: 20px;
+    margin: 0 40px;
+    color: #ffff00;
+    text-shadow: 0 0 10px #ffff00;
+    font-weight: bold;
+}
+
+canvas {
+    border: 4px solid #00ff00;
+    background-color: #000000;
+    display: block;
+    box-shadow: 0 0 30px #00ff00, inset 0 0 30px rgba(0, 255, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.controls {
+    font-size: 14px;
+    color: #00ff00;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.controls p {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.retro-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    background-color: #00ff00;
+    color: #000000;
+    border: 3px solid #00ff00;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px #00ff00;
+    transition: all 0.3s ease;
+}
+
+.retro-btn:hover {
+    background-color: #00cc00;
+    border-color: #00cc00;
+    box-shadow: 0 0 30px #00ff00;
+    transform: scale(1.05);
+}
+
+.retro-btn:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+    
+    .scoreboard {
+        flex-direction: column;
+    }
+    
+    .vs {
+        margin: 20px 0;
+    }
+}
